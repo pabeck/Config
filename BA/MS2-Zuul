@@ -1,3 +1,11 @@
-spring.application.name=MS2-Zuul
-spring.cloud.config.uri=http://localhost:8888
+# spring.application.name=MS2-Zuul
+# pring.cloud.config.uri=http://localhost:8888
+# spring.profiles.active=Test
 server.port=8090
+
+#Routing:
+ zuul:
+  routes:
+    users:
+      path: /JUP/**
+      url: http://www.google.de
